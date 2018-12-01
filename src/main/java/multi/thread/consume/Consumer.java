@@ -30,6 +30,6 @@ public abstract class Consumer {
         this.resultList = resultList;
     }
 
-    public void comsum(){};
+    public void comsum(){}
 
 }

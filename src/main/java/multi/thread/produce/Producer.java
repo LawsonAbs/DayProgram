@@ -32,8 +32,6 @@ public abstract class Producer {
     }
 
     //生产方法
-    public String produce(){
-
-        return null;
+    public void produce(){
     }
 }

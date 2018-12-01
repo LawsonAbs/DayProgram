@@ -10,22 +10,33 @@ public class ProducerOne extends Producer {
     }
 
     @Override
-    public String produce() {
-        String temp = "work 1 produce";
-        String res = null;
-        for(int i = 0;i < 10 ;i++) {
-            res = temp + i;//追加
+    public void produce() {
+        while(true) {
             synchronized (this.getResultList()) {//the lock of result
-                this.getResultList().getLists().add(res);// add the string to resultList
-                if (this.getResultList().getLists().size() > 10) {
+                //System.out.println("produce's size: " + this.getResultList().getLists().size());
+                if (this.getResultList().getLists().size() > 0) {
                     try {
-                        wait();// because the resultList's capacity limit ,so wait
+                        System.out.println("producer wait...");
+                        this.getResultList().wait();//wait the consumer to consume
+                        System.out.println("producer is waking...");
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
+
+                if (this.getResultList().getLists().size() == 0) {
+                    System.out.println("start produce...");
+                    System.out.println("   before produce: "+this.getResultList().getLists().size());
+                    this.getResultList().getLists().add("1");// add the string to resultList
+                    System.out.println("   after produce: "+this.getResultList().getLists().size());
+                    this.getResultList().notify();//notify the cosumer
+                }
+            }
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
-        return res;
     }
 }

@@ -15,12 +15,17 @@ public class Main {
         Consumer consumer = new ConsumerOne("con1",resultList);
         Producer producer = new ProducerOne("pro1",resultList);
 
-        ConsumeThread consumeThread =  new ConsumeThread(consumer,resultList);
-        ProduceThread produceThread = new ProduceThread(producer,resultList);
+        ConsumeThread consumeThread =  new ConsumeThread(consumer);
+        ProduceThread produceThread = new ProduceThread(producer);
 
-        while (true) {
-            consumeThread.run();
-            produceThread.run();
-        }
+        //new Thread(Runnable)
+        Thread threadConsumer = new Thread(consumeThread);
+        Thread threadProducer = new Thread(produceThread);
+
+        threadConsumer.setName("consumer");
+        threadProducer.setName("producer");
+
+        threadConsumer.start();
+        threadProducer.start();
     }
 }
