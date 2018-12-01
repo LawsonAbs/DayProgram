@@ -12,20 +12,35 @@ public class ConsumerOne extends Consumer {
 
     @Override
     public void comsum() {
-        if (this.getResultList().getLists().size() > 0) {
-            synchronized (this.getResultList()){//lock the list
-                int index = this.getResultList().getLists().size();
-                System.out.println("Consume："+this.getResultList().getLists().get(index));
+        while(true) {
+            synchronized (this.getResultList()) {//lock the list
+                if (this.getResultList().getLists().size() == 0) {
+                    try {
+                        System.out.println("consumer wait...");
+                        this.getResultList().wait();
+                        System.out.println("consumer is waking...");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                //if have else,consume
+                // the size is more than index [size = peek + 1]
+                int index = this.getResultList().getLists().size() - 1;
+                System.out.println("start consume：" + this.getResultList().getLists().get(index));
+                System.out.println("   before consume: " + this.getResultList().getLists().size());
                 this.getResultList().getLists().remove(index);// remove one element
-                notify();//notify the producer
+                System.out.println("   after consume: " + this.getResultList().getLists().size());
+                this.getResultList().notify();//notify the producer
             }
-        }
-        else{// if the list don't have any element,so wait
             try {
-                wait();
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
     }
 }
+
+/**
+ 01. wait 和 notify的顺序写反了，导致出现错误。
+ **/
