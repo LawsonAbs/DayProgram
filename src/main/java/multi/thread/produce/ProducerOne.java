@@ -1,9 +1,8 @@
 package multi.thread.produce;
 
-import multi.thread.produce.Producer;
 import multi.thread.result.ResultList;
 
-public class ProducerOne extends Producer {
+public class ProducerOne extends Producer implements Runnable{
 
     public ProducerOne(String name, ResultList resultList) {
         super(name, resultList);
@@ -38,5 +37,9 @@ public class ProducerOne extends Producer {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void run() {
+        this.produce();
     }
 }
