@@ -4,16 +4,15 @@ import java.io.File;
 import java.io.FilenameFilter;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Pattern;
 
 public class Main {
-    private static String fileName = "D:\\Java_Project\\DayProgram\\studyJava";
+    private static String fileName = "src";
     private static List<File> fileList = new  ArrayList<File>();
     public static void main(String[] args) {
-        local(fileName);
-        walk(fileName);
+       // local(fileName);
+        walk(new File(fileName));
 
         System.out.println(fileName+" 下的所有文件名为：");
         for (File file : fileList) {
@@ -61,14 +60,15 @@ public class Main {
     }
 
     //以下方法失败的原因是：
-    //java 不支持多层遍历。即当前层取到的File 对象，只在当前层中有效。如果再往下一层，则不可以了。
+    //01. 尝试直接使用一个文件名(String filePath)去构建一个File对象，但是因为某种特殊关系，导致无法得到连续的File对象
+    //02. 正是由于上面的原因，才有了下面的重载方法walk(File file)。将File对象作为参数传递，而不是构造出来的 filePath
     public static void walk(String filePath){
         //the file name in the specific path
         System.out.println(filePath);
         File file = new File(filePath);
 
         //if file is a directory
-        for(String fileName:file.list()){
+        for(String fileName : file.list()){
             File tempFile = new File(fileName);
             // 如果这个fileName对应的文件是一个文件夹，那么再次遍历
             fileList.add(tempFile);//先添加进 fileList
@@ -77,16 +77,21 @@ public class Main {
                 //System.out.println(tempFile.getPath());
                 //System.out.println(tempFile.getAbsolutePath());
                 walk(filePath+"\\"+tempFile.getName());
-                  //walk(tempFile.getName());
-                //break;
             }
         }
     }
 
-    public static class TreeInfo implements Iterable<File> {
-
-        public Iterator<File> iterator() {
-            return null;
+    public static void walk(File file){
+        //if file is a directory
+        for(File sunFiles:file.listFiles()){
+            // 如果这个fileName对应的文件是一个文件夹，那么再次遍历
+            fileList.add(sunFiles);//先添加进 fileList
+            System.out.println(sunFiles.getName());
+            while (sunFiles.isDirectory()) {
+                walk(sunFiles);
+                //you must break, or you get a die loop
+                break;
+            }
         }
     }
 }

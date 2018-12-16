@@ -6,7 +6,7 @@ import multi.thread.result.ResultList;
 /**
  * 01.抽象类，代表生产者
  */
-public abstract class Producer implements Runnable{
+public abstract class Producer {
     private String name;//the name of producer
     private ResultList resultList;// the share resultList to write
 

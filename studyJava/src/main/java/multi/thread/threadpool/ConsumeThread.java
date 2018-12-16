@@ -1,6 +1,7 @@
 package multi.thread.threadpool;
 
-import crawler.utils.ip.consume.Consumer;
+
+import multi.thread.consume.Consumer;
 
 public class ConsumeThread implements Runnable{
     private Consumer consumer ;

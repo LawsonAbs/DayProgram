@@ -2,7 +2,7 @@ package multi.thread.produce;
 
 import multi.thread.result.ResultList;
 
-public class ProducerOne extends Producer implements Runnable{
+public class ProducerOne extends Producer{
 
     public ProducerOne(String name, ResultList resultList) {
         super(name, resultList);
@@ -39,7 +39,4 @@ public class ProducerOne extends Producer implements Runnable{
         }
     }
 
-    public void run() {
-        this.produce();
-    }
 }
