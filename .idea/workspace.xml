@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57e9c6a2-cf46-4c6e-b49e-8c0336fdc965" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyJava/src/main/java/chapter18/Directroy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/consume/Consumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/consume/ConsumerOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studyJava/target/classes/chapter18/Main$Filter.class" afterPath="$PROJECT_DIR$/studyJava/target/classes/chapter18/Main$Filter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studyJava/target/classes/chapter18/Main.class" afterPath="$PROJECT_DIR$/studyJava/target/classes/chapter18/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studyJava/target/classes/chapter18/Redirecting.class" afterPath="$PROJECT_DIR$/studyJava/target/classes/chapter18/Redirecting.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/multi/thread/consume/Consumer.class" afterPath="$PROJECT_DIR$/target/classes/multi/thread/consume/Consumer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/multi/thread/consume/ConsumerOne.class" afterPath="$PROJECT_DIR$/target/classes/multi/thread/consume/ConsumerOne.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/multi/thread/entrance/Main.class" afterPath="$PROJECT_DIR$/target/classes/multi/thread/entrance/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/multi/thread/produce/Producer.class" afterPath="$PROJECT_DIR$/target/classes/multi/thread/produce/Producer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/multi/thread/produce/ProducerOne.class" afterPath="$PROJECT_DIR$/target/classes/multi/thread/produce/ProducerOne.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/multi/thread/threadpool/ConsumeThread.class" afterPath="$PROJECT_DIR$/target/classes/multi/thread/threadpool/ConsumeThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studyJava/src/main/java/chapter18/Main.java" afterPath="$PROJECT_DIR$/studyJava/src/main/java/chapter18/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/multi/thread/entrance/Main.java" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/entrance/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/multi/thread/produce/IpProducer.java" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/produce/IpProducer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/multi/thread/produce/Producer.java" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/produce/Producer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/multi/thread/produce/ProducerOne.java" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/produce/ProducerOne.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/multi/thread/result/ResultList.java" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/result/ResultList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/multi/thread/threadpool/ConsumeThread.java" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/threadpool/ConsumeThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/multi/thread/threadpool/ProduceThread.java" afterPath="$PROJECT_DIR$/studyJava/src/main/java/multi/thread/threadpool/ProduceThread.java" />
-    </list>
+    <list default="true" id="57e9c6a2-cf46-4c6e-b49e-8c0336fdc965" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/studyJava/target/" />
@@ -254,7 +232,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1983" />
     <option name="y" value="-8" />
     <option name="width" value="1865" />
@@ -536,15 +514,16 @@
       <workItem from="1543631218975" duration="6000" />
       <workItem from="1543632080977" duration="9975000" />
       <workItem from="1544235127675" duration="7210000" />
-      <workItem from="1544873092667" duration="3306000" />
+      <workItem from="1544873092667" duration="3445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20497000" />
+    <option name="totallyTimeSpent" value="20636000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1983" y="-8" width="1865" height="1096" extended-state="6" />
+    <frame x="1983" y="-8" width="1865" height="1096" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
