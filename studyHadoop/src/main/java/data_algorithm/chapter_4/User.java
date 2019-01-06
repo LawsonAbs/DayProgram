@@ -58,12 +58,12 @@ public class User implements Writable, WritableComparable<User>{
     }
 
     public int compareTo(User user) {
-        System.out.println("this.user_id:"+this.user_id+", this.level: "+this.level);
-        System.out.println("user.user_id:"+user.user_id+", user.level: "+user.level);
+//        System.out.println("this.user_id:"+this.user_id+", this.level: "+this.level);
+//        System.out.println("user.user_id:"+user.user_id+", user.level: "+user.level);
         int compareValue = (this.user_id.equals(user.getUser_id()))? 0 : 1;
-//        if (compareValue == 0) {
-//            compareValue = (this.level == user.level)? 0 : 1;
-//        }
+        if (compareValue == 0) {
+            compareValue = (this.level == user.level)? 0 : 1;
+        }
         System.out.println("compareValue: "+compareValue );
         return compareValue;
     }
@@ -84,8 +84,19 @@ public class User implements Writable, WritableComparable<User>{
 
     @Override
     public int hashCode() {
-        int result = user_id != null ? user_id.hashCode() : 0;
-        result = 31 * result + level ;
-        return result;
+        //int result = this.getUser_id() != null ? this.getUser_id().hashCode() : 0;
+        //result = 31 * result + level ;
+        //不能使用这个+ level 值的，否则会将相同user_id 的分到不同的区？
+        if (this.getUser_id().equals("u1")) return 1;
+        if (this.getUser_id().equals("u2")) return 2;
+        if (this.getUser_id().equals("u3")) return 3;
+        if (this.getUser_id().equals("u4")) return 4;
+        if (this.getUser_id().equals("u5")) return 5;
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return this.getUser_id();
     }
 }

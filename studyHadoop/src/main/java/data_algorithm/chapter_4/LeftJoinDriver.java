@@ -62,11 +62,11 @@ public class LeftJoinDriver extends Configured implements Tool {
 
         job.setMapOutputKeyClass(User.class);
         job.setMapOutputValueClass(Text.class);
-        //job.setPartitionerClass(UserPartitioner.class);
+        job.setPartitionerClass(UserPartitioner.class);
 
         job.setGroupingComparatorClass(SecondarySortGroupComparator.class);
-        //job.setReducerClass(UserReducer.class);
-
+        job.setReducerClass(UserReducer.class);
+        //job.setNumReduceTasks(3);
         boolean status = job.waitForCompletion(true);
         return status? 0: 1;
     }

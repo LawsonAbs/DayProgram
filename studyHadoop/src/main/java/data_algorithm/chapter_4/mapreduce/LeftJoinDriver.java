@@ -57,8 +57,9 @@ public class LeftJoinDriver {
       [root@server4 hadoop]# hdfs dfs -cat hdfs://server4:9000/output/leftJoin/part-r-00000
       SEQorg.apache.hadoop.io.Textorg.apache.hadoop.io.TexM±
       >,N¬Bbၰ4UTp1UTp1UTp3UTp2GAp1GAp4CAp4GA
-      */
 
+      因为这是一个SequenceFileOutputFormat，所以这样会显示是乱码
+      */
 
       // define multiple mappers: one for users and one for transactions
       MultipleInputs.addInputPath(job, transactions, TextInputFormat.class, LeftJoinTransactionMapper.class);

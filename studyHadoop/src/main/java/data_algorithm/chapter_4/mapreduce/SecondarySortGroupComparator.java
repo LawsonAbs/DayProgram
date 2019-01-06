@@ -17,6 +17,13 @@ public class SecondarySortGroupComparator
 
     /**
      *  Group only by userID
+     *
+     *
+     *  1.但是现在的问题是：如果出现了如下两组数据，该怎么比较
+     *  outputKey.set(u1, "1");    // set user_id
+        outputValue.set("L", GA);  // set location_id
+
+        2.而且具体调用哪一个 compare() 方法呢？
      */
     public int compare(PairOfStrings first, PairOfStrings second) {
        return first.getLeftElement().compareTo(second.getLeftElement());

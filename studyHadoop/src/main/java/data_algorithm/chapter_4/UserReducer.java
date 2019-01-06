@@ -12,7 +12,7 @@ public class UserReducer extends Reducer<User,Text,Text,Text> {
         for (Text tx : values) {
             sb.append(tx.toString()) .append( ",");
         }
-        System.out.println(sb.toString());
+        System.out.println("key："+key+",value: "+sb.toString());
         context.write(new Text(key.getUser_id()),new Text(sb.toString()));
     }
 }
