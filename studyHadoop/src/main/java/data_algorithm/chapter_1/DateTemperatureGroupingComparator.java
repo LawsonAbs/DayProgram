@@ -22,10 +22,9 @@ public class DateTemperatureGroupingComparator extends WritableComparator{
         DateTemperaturePair pair = (DateTemperaturePair)wc1;
         DateTemperaturePair pair2 = (DateTemperaturePair)wc2;
         //System.out.println("yearMonth: "+pair.getYearMonth()+" temperature: "+pair.getTemperature());
-        boolean res = pair.getYearMonth().equals(pair2.getYearMonth());
+        //boolean res = pair.getYearMonth().equals(pair2.getYearMonth());
+        boolean res = pair.getYearMonth().toString().substring(0,4).equals(pair2.getYearMonth().toString().substring(0,4));
         int status =  res ? 0 : 1;
         return status;  // 1 stand for a sole group, but the 0 stand for a united group
-        //return status;
-        //return pair.getYearMonth().compareTo(pair2.getYearMonth());
     }
 }
