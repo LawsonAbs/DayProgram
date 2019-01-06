@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="studyHadoop" />
         <module name="studyJava" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="dayProgram" target="1.5" />
-      <module name="studyJava" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="dayProgram" target="1.8" />
+      <module name="studyHadoop" target="1.8" />
+      <module name="studyJava" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
