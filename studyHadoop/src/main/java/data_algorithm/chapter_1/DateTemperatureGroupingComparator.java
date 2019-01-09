@@ -6,7 +6,8 @@ import org.apache.hadoop.io.WritableComparator;
 
 /**
  * 1.定制比较器（Comparator） 对 Reducer 值排序。
- * 2.它的功能是【完成排序】
+ * 2.它的功能是【完成排序】 X
+ *   它的功能是【完成分组】
  *
  */
 

@@ -25,18 +25,19 @@ public class SecondarySortGroupComparator extends WritableComparator {
      */
     @Override
     public int compare(WritableComparable wc1, WritableComparable wc2) {
-        System.out.println("start group comparator....");
+        //System.out.println("start group comparator....");
         User user1 = (User)wc1;
         User user2 = (User)wc2;
 
-        boolean res = user1.getUser_id().equals(user2.getUser_id());
-        System.out.println("=================");
-        System.out.println("user1.getUser_id="+user1.getUser_id()+" ,user2.getUser_id="+user2.getUser_id());
-        System.out.println("user1.getLevel="+user1.getLevel()+" ,user2.getLevel="+user2.getLevel());
-        System.out.println("=================");
-        int status = res ? 0: 1;
-        System.out.println("status= "+status+",end....");
-        return  status;
+        return user1.getUser_id().compareTo(user2.getUser_id());
+//        boolean res = user1.getUser_id().equals(user2.getUser_id());
+//        System.out.println("=================");
+//        System.out.println("user1.getUser_id="+user1.getUser_id()+" ,user2.getUser_id="+user2.getUser_id());
+//        System.out.println("user1.getLevel="+user1.getLevel()+" ,user2.getLevel="+user2.getLevel());
+//        System.out.println("=================");
+//        int status = res ? 0: 1;
+//        System.out.println("status= "+status+",end....");
+//        return  status;
 
         //return  0;
     }

@@ -1,6 +1,5 @@
 package data_algorithm.chapter_4;
 
-import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 
@@ -58,13 +57,11 @@ public class User implements Writable, WritableComparable<User>{
     }
 
     public int compareTo(User user) {
-//        System.out.println("this.user_id:"+this.user_id+", this.level: "+this.level);
-//        System.out.println("user.user_id:"+user.user_id+", user.level: "+user.level);
-        int compareValue = (this.user_id.equals(user.getUser_id()))? 0 : 1;
+        int compareValue = this.getUser_id().compareTo(user.getUser_id());
         if (compareValue == 0) {
-            compareValue = (this.level == user.level)? 0 : 1;
+            //return this.getLevel() - user.getLevel();  //先出现 location, 再出现 product
+            return user.getLevel() - this.getLevel(); //先出现product , 再出现 location
         }
-        System.out.println("compareValue: "+compareValue );
         return compareValue;
     }
 
@@ -84,15 +81,22 @@ public class User implements Writable, WritableComparable<User>{
 
     @Override
     public int hashCode() {
-        //int result = this.getUser_id() != null ? this.getUser_id().hashCode() : 0;
+        int result = this.getUser_id() != null ? this.getUser_id().hashCode() : 0;
         //result = 31 * result + level ;
         //不能使用这个+ level 值的，否则会将相同user_id 的分到不同的区？
-        if (this.getUser_id().equals("u1")) return 1;
-        if (this.getUser_id().equals("u2")) return 2;
-        if (this.getUser_id().equals("u3")) return 3;
-        if (this.getUser_id().equals("u4")) return 4;
-        if (this.getUser_id().equals("u5")) return 5;
-        return 0;
+        if (this.getUser_id().equals("u1")) {
+            System.out.println("u1");
+            return 1;
+        }
+        if (this.getUser_id().equals("u2")) {
+            System.out.println("u2");
+            return 2;
+        }
+//        if (this.getUser_id().equals("u3")) return 3;
+//        if (this.getUser_id().equals("u4")) return 4;
+//        if (this.getUser_id().equals("u5")) return 5;
+
+        return result;
     }
 
     @Override
