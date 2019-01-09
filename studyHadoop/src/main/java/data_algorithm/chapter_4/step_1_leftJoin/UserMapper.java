@@ -1,4 +1,4 @@
-package data_algorithm.chapter_4;
+package data_algorithm.chapter_4.step_1_leftJoin;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -22,6 +22,6 @@ public class UserMapper extends Mapper<LongWritable,Text,User,Text>{
 
         //输出的格式是：user user_loc
         context.write(user,new Text(user_loc));
-        //System.out.println("UserMapper End...");
+        //System.out.println("SecondMapper End...");
     }
 }

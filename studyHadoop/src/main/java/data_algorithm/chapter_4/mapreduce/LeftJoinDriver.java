@@ -14,7 +14,7 @@ import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 //
 
 /** 
- * LeftJoinDriver is driver class for submitting "Left Join" job to Hadoop.
+ * SecondJobDriver is driver class for submitting "Left Join" job to Hadoop.
  *
  * @author Mahmoud Parsian
  *

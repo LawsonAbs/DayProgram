@@ -1,4 +1,4 @@
-package data_algorithm.chapter_4;
+package data_algorithm.chapter_4.step_1_leftJoin;
 
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
@@ -59,8 +59,8 @@ public class User implements Writable, WritableComparable<User>{
     public int compareTo(User user) {
         int compareValue = this.getUser_id().compareTo(user.getUser_id());
         if (compareValue == 0) {
-            //return this.getLevel() - user.getLevel();  //先出现 location, 再出现 product
-            return user.getLevel() - this.getLevel(); //先出现product , 再出现 location
+            return this.getLevel() - user.getLevel();  //先出现 location, 再出现 product
+            //return user.getLevel() - this.getLevel(); //先出现product , 再出现 location
         }
         return compareValue;
     }

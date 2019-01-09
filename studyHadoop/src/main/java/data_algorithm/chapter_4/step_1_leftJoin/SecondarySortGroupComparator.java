@@ -1,4 +1,4 @@
-package data_algorithm.chapter_4;
+package data_algorithm.chapter_4.step_1_leftJoin;
 
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
