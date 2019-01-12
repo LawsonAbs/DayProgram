@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57e9c6a2-cf46-4c6e-b49e-8c0336fdc965" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgJobDriver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgReducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/Stock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/StockGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_6_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_6_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_6_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAJobDriver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAReducer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studyHadoop/pom.xml" afterPath="$PROJECT_DIR$/studyHadoop/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MoveAvgReducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgReducer.java">
+      <file leaf-file-name="MBAReducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="12" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,36 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stock.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/Stock.java">
+      <file leaf-file-name="MBAJobDriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAJobDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1186#1187#0" expanded="true" />
-                <marker date="1547267292888" expanded="false" signature="625:1039" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reducer.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.4/hadoop-mapreduce-client-core-2.6.4-sources.jar!/org/apache/hadoop/mapreduce/Reducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StockGroup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/StockGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="614">
+              <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoveAvgJobDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgJobDriver.java">
+      <file leaf-file-name="MBAMapper.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+            <state relative-caret-position="330">
+              <caret line="21" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,9 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$MAVEN_REPOSITORY$/edu/umd/cloud9/1.3.2/cloud9-1.3.2.jar!/edu/umd/cloud9/io/pair/PairOfStrings.class" />
-        <option value="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/utils/HdfsUtils.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/test/Main.java" />
         <option value="$PROJECT_DIR$/studyHadoop/src/main/resources/configuration-2.xml" />
         <option value="$PROJECT_DIR$/studyHadoop/src/main/resources/configuration-1.xml" />
@@ -189,6 +154,9 @@
         <option value="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgJobDriver.java" />
         <option value="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/Stock.java" />
         <option value="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgReducer.java" />
+        <option value="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAReducer.java" />
+        <option value="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAJobDriver.java" />
+        <option value="$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAMapper.java" />
       </list>
     </option>
   </component>
@@ -238,8 +206,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1495" />
-    <option name="y" value="168" />
+    <option name="x" value="2012" />
+    <option name="y" value="276" />
     <option name="width" value="1870" />
     <option name="height" value="1096" />
   </component>
@@ -314,37 +282,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="data_algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DayProgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DayProgram" type="462c0819:PsiDirectoryNode" />
-              <item name="studyHadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data_algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DayProgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DayProgram" type="462c0819:PsiDirectoryNode" />
-              <item name="studyHadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data_algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter_5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DayProgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DayProgram" type="462c0819:PsiDirectoryNode" />
-              <item name="studyHadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="data_algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="chapter_6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DayProgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DayProgram" type="462c0819:PsiDirectoryNode" />
+              <item name="studyHadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data_algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_7" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DayProgram" type="b2602c69:ProjectViewProjectNode" />
@@ -410,7 +358,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MoveAvgJobDriver">
+  <component name="RunManager" selected="Application.MBAJobDriver">
+    <configuration name="MBAJobDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="data_algorithm.chapter_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="data_algorithm.chapter_7.MBAJobDriver" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs://server4:9000/input/mbaTransaction_2.txt hdfs://server4:9000/output/mbaTransaction" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="studyHadoop" />
+      <envs />
+    </configuration>
+    <configuration name="MBAMapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="data_algorithm.chapter_7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="data_algorithm.chapter_7.MBAMapper" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="studyHadoop" />
+      <envs />
+    </configuration>
     <configuration name="MoveAvgJobDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -468,25 +454,6 @@
       <module name="studyHadoop" />
       <envs />
     </configuration>
-    <configuration name="OrderInversionReducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="data_algorithm.chapter_5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="data_algorithm.chapter_5.OrderInversionReducer" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="studyHadoop" />
-      <envs />
-    </configuration>
     <configuration name="PairPartition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -498,25 +465,6 @@
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="studyHadoop" />
-      <envs />
-    </configuration>
-    <configuration name="SecondJobDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="data_algorithm.chapter_4.step_2_leftJoin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="data_algorithm.chapter_4.step_2_leftJoin.SecondJobDriver" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="hdfs://server4:9000/output/leftJoin/part-r-00000 hdfs://server4:9000/output/leftJoin/final" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -607,19 +555,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.SecondJobDriver" />
-      <item index="1" class="java.lang.String" itemvalue="Application.OrderInversionReducer" />
-      <item index="2" class="java.lang.String" itemvalue="Application.OrderInversionJobDriver" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PairPartition" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MoveAvgJobDriver" />
+      <item index="0" class="java.lang.String" itemvalue="Application.OrderInversionJobDriver" />
+      <item index="1" class="java.lang.String" itemvalue="Application.PairPartition" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MoveAvgJobDriver" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MBAMapper" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MBAJobDriver" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MoveAvgJobDriver" />
-        <item index="1" class="java.lang.String" itemvalue="Application.OrderInversionJobDriver" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PairPartition" />
-        <item index="3" class="java.lang.String" itemvalue="Application.OrderInversionReducer" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SecondJobDriver" />
+        <item index="0" class="java.lang.String" itemvalue="Application.MBAJobDriver" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MBAMapper" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MoveAvgJobDriver" />
+        <item index="3" class="java.lang.String" itemvalue="Application.OrderInversionJobDriver" />
+        <item index="4" class="java.lang.String" itemvalue="Application.PairPartition" />
       </list>
     </recent_temporary>
   </component>
@@ -656,12 +604,12 @@
       <workItem from="1547000584547" duration="7639000" />
       <workItem from="1547036763658" duration="6706000" />
       <workItem from="1547125993943" duration="16579000" />
-      <workItem from="1547260361820" duration="9878000" />
+      <workItem from="1547260361820" duration="12949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160327000" />
+    <option name="totallyTimeSpent" value="163398000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,7 +634,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18287292" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43482795" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4223149" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -773,27 +721,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.6.4/hadoop-common-2.6.4-sources.jar!/org/apache/hadoop/io/WritableComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_4/mapreduce/LeftJoinDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="61" column="8" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_1/DateTemperaturePair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/test/TestReducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1107,20 +1034,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgJobDriver.java">
+    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        <state relative-caret-position="252">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <marker date="1547267292888" expanded="false" signature="625:1039" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/StockGroup.java">
+    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="249">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1135,25 +1065,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgReducer.java">
+    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/StockGroup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="154">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/Stock.java">
+    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_6/MoveAvgJobDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="20" />
+        <state relative-caret-position="480">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="42" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <marker date="1547267292888" expanded="false" signature="625:1039" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAJobDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyHadoop/src/main/java/data_algorithm/chapter_7/MBAMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
